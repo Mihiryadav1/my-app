@@ -5,7 +5,7 @@ export default function TextForm(props) {
         color: 'black',
         backgroundColor: 'white'
     })
-    const [txt,btntxt]=useState("Enable Dark Mode")
+    const [txt, btntxt] = useState("Enable Dark Mode")
     const toggleStyle = () => {
         if (style.color === 'black') {
             setmyStyle({
@@ -19,7 +19,7 @@ export default function TextForm(props) {
             setmyStyle({
                 color: 'black',
                 backgroundColor: 'white',
-                
+
             })
             btntxt("Enable Dark Mode");
 
@@ -27,10 +27,8 @@ export default function TextForm(props) {
 
 
     }
-
-
     return (
-        <div style={style}>
+        <div style={style} className="p-5">
             <div class="accordion" id="accordionExample" style={style} >
                 <div className="p-3"><h1>About Us</h1></div>
                 <div class="accordion-item" style={style}>
@@ -40,14 +38,14 @@ export default function TextForm(props) {
                         </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body"  style={style}>
+                        <div class="accordion-body" style={style}>
                             <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item"style={style}>
+                <div class="accordion-item" style={style}>
                     <h2 class="accordion-header" id="headingTwo" >
-                        <button class="accordion-button collapsed" style={style}type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <button class="accordion-button collapsed" style={style} type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             Accordion Item #2
                         </button>
                     </h2>
@@ -57,9 +55,9 @@ export default function TextForm(props) {
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item"style={style}>
+                <div class="accordion-item" style={style}>
                     <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" style={style}  type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <button class="accordion-button collapsed" style={style} type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             Accordion Item #3
                         </button>
                     </h2>
@@ -70,9 +68,9 @@ export default function TextForm(props) {
                     </div>
                 </div>
             </div>
-           <div className="my-3 mx-3">
-           <button className="btn btn-primary" onClick={toggleStyle}>{txt}</button>
-           </div>
+            <div className="my-3 mx-3">
+                <button className="btn btn-primary" onClick={toggleStyle}>{txt}</button>
+            </div>
 
 
         </div>
