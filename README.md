@@ -1,1 +1,1 @@
-This is a simple Dark Mode implementation in React
+This is a simple  application in React that  lets you write a text in a textbox and perform some operations like Copy Text,Clear the Text ,Convert the text to UpperCase and helps you toggle between Dark and Light Mode
